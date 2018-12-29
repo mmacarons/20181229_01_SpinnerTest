@@ -6,9 +6,14 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.tjit.a20181229_01_spinnertest.adapters.CompanyAdapter;
 import kr.tjit.a20181229_01_spinnertest.datas.Restaurant;
 
 public class MainActivity extends BaseActivity {
+
+//    어뎁터클래스를 객체화하고 리스트뷰와 연결
+    CompanyAdapter mAdapter;
+
 
     List<Restaurant> restaurants = new ArrayList<Restaurant>();
 
@@ -30,6 +35,10 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        mAdapter = new CompanyAdapter(mContext, restaurants);
+        companySpinner.setAdapter(mAdapter);
+
         fillRestaurants();
     }
 

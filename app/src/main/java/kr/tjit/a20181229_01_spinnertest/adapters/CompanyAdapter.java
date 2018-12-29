@@ -47,4 +47,9 @@ public class CompanyAdapter extends ArrayAdapter<Restaurant> {
 
         return row;
     }
+
+//    getDropDownView 도 적어줘야 함
+
+
+
 }
