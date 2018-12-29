@@ -30,8 +30,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-
-
+        fillRestaurants();
     }
 
     private void fillRestaurants() {
