@@ -13,10 +13,7 @@ public class MainActivity extends BaseActivity {
 
 //    어뎁터클래스를 객체화하고 리스트뷰와 연결
     CompanyAdapter mAdapter;
-
-
     List<Restaurant> restaurants = new ArrayList<Restaurant>();
-
     private android.widget.Spinner companySpinner;
 
     @Override
